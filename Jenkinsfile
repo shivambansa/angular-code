@@ -10,7 +10,6 @@ pipeline{
 
             steps {
             echo "building the application"
-            sh 'npm i'
             sh 'npm run build'
             }
 
