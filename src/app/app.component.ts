@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <h3>Automatically built and deployed after each code update <h3>
     <br>
     <br>
-    <h5 style= "color: purple; align:right">----pipeline created by rohit----</h5>
+    <h5 style= "color: purple; align:right">----hai bhai maine banyai hai bus code rohit bhai ne diya hai----</h5>
   `
 })
 export class AppComponent {
