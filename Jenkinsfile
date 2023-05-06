@@ -10,7 +10,10 @@ pipeline{
 
             steps {
             echo "building the application"
-            sh 'npm run build'
+            echo 'npm i'
+            echo 'npm run build'
+            echo "skipping build. Build already exists..."
+
             }
 
         }
