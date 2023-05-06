@@ -24,7 +24,7 @@ pipeline{
             steps {
             echo "deploying the application using ansible-playbook"
 	sh '''
-	ansible-playbook -i inventory angular-app-deploy.yml --key-file /var/lib/jenkins/ansible
+	ansible-playbook -i inventory angular-app-deploy.yml --key-file /var/lib/jenkins/pemfile
 	'''
 
             }
