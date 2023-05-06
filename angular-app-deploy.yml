@@ -1,0 +1,23 @@
+- hosts: ubuntu_slaves
+  become: yes
+  tasks:
+    - name: copy built files to deploy-server
+      synchronize:
+        src: /var/lib/jenkins/workspace/angular-pipeline/dist/
+        dest: /var/www/html/
+        delete: true
+        recursive: true
+
+    - name: restart apache
+      systemd:
+        name: apache2
+        state: restarted
+
+          #    - name: serve using ng needs angular/cli
+          #      shell: 
+          #        chdir: /var/www/html/
+          #        cmd: ng serve 
+          #      become: yes
+
+
+  
