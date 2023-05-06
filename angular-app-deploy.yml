@@ -3,7 +3,7 @@
   tasks:
     - name: copy built files to deploy-server
       synchronize:
-        src: /var/lib/jenkins/workspace/angular-pipeline/dist/
+        src: /var/lib/jenkins/workspace/angular-pipeline/dist/angular-hello-world/
         dest: /var/www/html/
         delete: true
         recursive: true
